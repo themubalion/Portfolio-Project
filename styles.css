@@ -1,0 +1,127 @@
+/* Normalizers starts */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    margin: 0;
+    background-color:var(--body-color) ;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --link-color:rgb(255, 253, 253);
+    --nav-theme:rgb(129, 23, 27);
+    --body-color:rgb(72, 86, 150);
+}
+
+/* Normalisers ends */
+
+/* Styling navigation section starts */
+
+header {
+    margin: 0;
+}
+
+#navigation-section {
+    /* max-width: 100vw; */
+    margin: 0;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    background-color: var(--nav-theme);
+    margin-bottom: 0;
+    height: 100%;
+    padding: 0;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    width:calc(100% / 3);
+    padding: 0;
+}
+
+.navlink {
+    margin:0;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--link-color);
+    padding:10px 30px;
+}
+
+.navlink:hover {
+    background-color: rgb(72, 86, 150);
+    height: 100%;
+}
+
+@media only screen and (max-width:600px){
+    #nav-links {
+        width:calc(100%/2);
+    }
+}
+
+/* Navigation section ends */
+
+/* Welcome section starts */
+
+#welcome-section {
+    margin-top: 0;
+    /* width: 100vw; */
+    height: 100vh;
+    background: linear-gradient(62deg, rgb(1, 38, 34) 0%, rgb(5, 4, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    text-align: center;
+    margin: 0;
+    color: var(--link-color);
+    font-size: 40px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#welcome-section #name {
+    font-weight: 700;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#subtitle {
+    color:var(--link-color);
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Welcome section ends */
+
+/* Projects section starts */
+
+a.project {
+    text-decoration: none;
+    color: white;
+}
+
+/* Projects section ends */
