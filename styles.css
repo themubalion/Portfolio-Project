@@ -21,7 +21,7 @@ html {
 :root {
     --link-color:rgb(255, 253, 253);
     --nav-theme:rgb(129, 23, 27);
-    --body-color:rgb(72, 86, 150);
+    --body-color:#dbd2e0;
 }
 
 /* Normalisers ends */
@@ -119,9 +119,48 @@ nav {
 
 /* Projects section starts */
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+}
+
+.project-parent {
+    align-items: center;
+}
+
+.project-tiles {
+    display: grid;
+    grid-template-columns: repeat(2,calc(90% / 2));
+    margin:0 5%;
+    /* grid-gap: 20px 8% ; */
+    gap: 5% 8%;
+    grid-template-rows: repeat(2);
+    width: 90%;
+    /* justify-content:end; */
+    justify-items: center;
+    place-items:center;
+}
+
+#project-tile {
+    width: calc(100%);
+    /* aspect-ratio: 1/1; */
+    background-color: rgb(72, 86, 150);
+}
+
 a.project {
     text-decoration: none;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(5, 4, 1);
+}
+
+.code {
+    color: transparent;
 }
 
 /* Projects section ends */
